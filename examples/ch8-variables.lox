@@ -1,0 +1,32 @@
+var a = 1;
+var b = 2;
+print a + b;
+
+print (b*b*b*b*b*b*b+a)/b;
+
+b = "hello";
+
+print b + " world";
+
+var one = "forty two";
+var two = 1;
+print two = 2;
+
+{
+    var two = 42;
+    print "inner";
+    print two;
+    print one;
+}
+
+print "outer";
+print two;
+print one;
+
+print "challenge";
+
+var a = 1;
+{
+    var a = a + 1;
+    print a;
+}

@@ -44,6 +44,22 @@ public class Lox {
             hadError = false;
             hadRuntimeError = false;
             run(line);
+
+            /* ch.8 challenge -- REPL flexibility
+            Scanner scanner = new Scanner(line);
+            List<Token> tokens = scanner.scanTokens();
+            Parser parser = new Parser(tokens);
+
+            try {
+                Expr expr = parser.parseExpression();
+                Object result = expr.accept(interpreter);
+                System.out.println(result);
+            } catch (Exception e) {
+                hadRuntimeError = false;
+                hadError = false;
+                run(line);
+            }
+            // end challenge */
         }
     }
 
