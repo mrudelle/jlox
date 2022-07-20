@@ -1,0 +1,7 @@
+var start = clock();
+
+print "waiting 2.5s";
+
+while (clock()-start < 2.5) {}
+
+print "done";
