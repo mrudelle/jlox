@@ -5,3 +5,21 @@ print "waiting 2.5s";
 while (clock()-start < 2.5) {}
 
 print "done";
+
+fun say(something) {
+    print something;
+}
+
+say("hello");
+
+fun fibonacci(a, b, max) {
+    if (a < max) {
+        fibonacci(a+b, a, max);
+    }
+    print(a); // print fibonacci suite in reverse order
+}
+
+fibonacci(1, 0, 10000);
+
+
+
