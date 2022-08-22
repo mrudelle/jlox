@@ -1,0 +1,20 @@
+var a = "global";
+{
+    fun showA() {
+      print a;
+    }
+    showA();
+    var a = "block";
+    // should print "global", not "block"
+    showA();
+}
+
+// Should throw
+fun bad() {
+    var a = "first";
+    // var a = "second";
+}
+
+// should throw
+// return "at top level";
+
