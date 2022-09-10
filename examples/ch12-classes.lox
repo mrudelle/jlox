@@ -1,0 +1,62 @@
+class DevonshireCream {
+  serveOn() {
+    return "Scones";
+  }
+}
+
+print DevonshireCream;
+
+class Bagel {
+
+  eat() {
+    print "Oishiii";
+  }
+}
+var bagel = Bagel();
+print bagel;
+
+// Should throw undefined value
+// print bagel.topping;
+
+bagel.topping = "poppy seeds";
+print bagel.topping;
+
+bagel.eat();
+
+var eat = bagel.eat;
+eat();
+
+// 12.6
+
+class Egotist {
+
+  speak() {
+    print this;
+  }
+}
+
+var speak = Egotist().speak;
+speak();
+
+class Cake {
+  taste() {
+    var adjective = "delicious";
+    print "The " + this.flavor + " cake is " + adjective + "!";
+  }
+}
+
+var cake = Cake();
+cake.flavor = "German chocolate";
+cake.taste(); // Prints "The German chocolate cake is delicious!".
+
+// 12.7
+
+class Foo {
+  init() {
+    // return 1;
+    print this;
+  }
+}
+
+var foo = Foo();
+print foo.init();
