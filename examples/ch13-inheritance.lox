@@ -1,0 +1,29 @@
+class Doughnut {
+  cook() {
+    print "Fry until golden brown.";
+  }
+}
+
+class BostonCream < Doughnut {}
+
+BostonCream().cook();
+
+// 13.3 super
+
+class BostonCream < Doughnut {
+  cook() {
+    super.cook();
+    print "Pipe full of custard and coat with chocolate.";
+  }
+}
+
+BostonCream().cook();
+
+// 13.3.3 invalid uses (should throw)
+
+// super.heeloo();
+class Pastry {
+  cook() {
+    //super.notallowed();
+  }
+}
